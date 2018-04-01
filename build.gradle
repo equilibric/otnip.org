@@ -1,0 +1,23 @@
+// setup buildscript
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath "io.ratpack:ratpack-gradle:$otnip_version_ratpack"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$otnip_version_kotlin"
+        classpath files(otnip_path_plugin_kotlin)
+        classpath files(otnip_path_plugin_logging)
+    }
+}
+
+apply plugin: 'base'
+
+repositories {
+    jcenter()
+}
+
+subprojects {
+    apply from: rootProject.file('common.gradle')
+}
