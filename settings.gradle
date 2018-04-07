@@ -10,6 +10,9 @@ project( ':gradle-plugins:logging' ).projectDir = new File( rootDir, 'gradle-plu
 include ':gradle-plugins:ratpack'
 project( ':gradle-plugins:ratpack' ).projectDir = new File( rootDir, 'gradle-plugins/ratpack' )
 
+include ':gradle-plugins:webpack'
+project( ':gradle-plugins:webpack' ).projectDir = new File( rootDir, 'gradle-plugins/webpack' )
+
 // test project
 include ':test'
 project( ':test' ).projectDir = new File( rootDir, 'test' )
