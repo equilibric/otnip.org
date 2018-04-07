@@ -3,8 +3,12 @@ rootProject.name = 'otnip.org'
 // gradle plugins
 include ':gradle-plugins:kotlin'
 project( ':gradle-plugins:kotlin' ).projectDir = new File( rootDir, 'gradle-plugins/kotlin' )
+
 include ':gradle-plugins:logging'
 project( ':gradle-plugins:logging' ).projectDir = new File( rootDir, 'gradle-plugins/logging' )
+
+include ':gradle-plugins:ratpack'
+project( ':gradle-plugins:ratpack' ).projectDir = new File( rootDir, 'gradle-plugins/ratpack' )
 
 // test project
 include ':test'
