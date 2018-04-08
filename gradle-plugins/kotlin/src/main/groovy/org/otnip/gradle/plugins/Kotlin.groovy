@@ -20,5 +20,12 @@ class Kotlin implements Plugin<Project> {
         // add aux dependencies
         project.dependencies.add("compile", "io.github.microutils:kotlin-logging:${properties['otnip_version_kotlin_logging']}")
         project.dependencies.add("compile", "com.fasterxml.jackson.module:jackson-module-kotlin:${properties['otnip_version_kotlin_jackson']}")
+
+        // add compilation instuctions
+        project.tasks.withType(Class.forName('org.jetbrains.kotlin.gradle.tasks.KotlinCompile')).all {
+            kotlinOptions {
+                jvmTarget = "1.8"
+            }
+        }
     }
 }
