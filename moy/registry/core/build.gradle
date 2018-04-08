@@ -1,0 +1,5 @@
+apply plugin: org.otnip.gradle.plugins.Kotlin
+
+dependencies {
+    compile project(":moy:moy-core")
+}
