@@ -1,14 +1,15 @@
 // setup buildscript
 buildscript {
     repositories {
+        mavenLocal()
         jcenter()
     }
 
     dependencies {
         classpath "io.ratpack:ratpack-gradle:$otnip_version_ratpack"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$otnip_version_kotlin"
-        classpath files(otnip_path_plugin_kotlin)
-        classpath files(otnip_path_plugin_logging)
+        // plugins ( cyclical dependency )
+        classpath "org.otnip:kotlin:dev"
     }
 }
 
