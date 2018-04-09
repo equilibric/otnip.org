@@ -19,6 +19,12 @@ project( ':gradle-plugins:webpack' ).projectDir = new File( rootDir, 'gradle-plu
 include ':moy:moy-core'
 project( ':moy:moy-core' ).projectDir = new File( rootDir, 'moy/core' )
 
+include ':moy:moy-registry-core'
+project( ':moy:moy-registry-core' ).projectDir = new File( rootDir, 'moy/registry/core' )
+
+include ':moy:moy-registry-zookeeper'
+project( ':moy:moy-registry-zookeeper' ).projectDir = new File( rootDir, 'moy/registry/zookeeper' )
+
 /**
  * dev - development & testing
  */
