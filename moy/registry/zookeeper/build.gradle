@@ -1,7 +1,0 @@
-apply plugin: org.otnip.gradle.plugins.Kotlin
-
-dependencies {
-    compile project(":moy:moy-registry-core")
-    compile ("org.apache.zookeeper:zookeeper:$otnip_version_zookeeper")
-    compile ("org.apache.avro:avro-ipc:${otnip_version_avro}")
-}
