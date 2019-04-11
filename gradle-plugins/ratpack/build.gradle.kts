@@ -1,0 +1,2 @@
+apply<GroovyPlugin>()
+apply<JavaGradlePluginPlugin>()
