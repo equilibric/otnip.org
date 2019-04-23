@@ -1,5 +1,5 @@
 plugins {
-    org.otnip.gradle.plugins.Kotlin::class.java
+    id("otnip-kotlin")
 }
 
 dependencies {
