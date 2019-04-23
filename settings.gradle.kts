@@ -14,6 +14,12 @@ include(":gradle-plugins:webpack")
 project(":gradle-plugins:webpack").projectDir = File(rootDir, "gradle-plugins/webpack")
 
 /**
+ * hbase tools
+ */
+include(":hbase:hbase-core");project(":hbase:hbase-core").projectDir = File(rootDir, "hbase/core")
+include(":hbase:hbase-impl");project(":hbase:hbase-impl").projectDir = File(rootDir, "hbase/impl")
+
+/**
  * moy - microservices on yarn
  */
 include(":moy:moy-core")
