@@ -1,17 +1,10 @@
 rootProject.name = "otnip.org"
 
 // gradle plugins
-include(":gradle-plugins:kotlin")
-project(":gradle-plugins:kotlin").projectDir = File(rootDir, "gradle-plugins/kotlin")
-
-include(":gradle-plugins:logging")
-project(":gradle-plugins:logging").projectDir = File(rootDir, "gradle-plugins/logging")
-
-include(":gradle-plugins:ratpack")
-project(":gradle-plugins:ratpack").projectDir = File(rootDir, "gradle-plugins/ratpack")
-
-include(":gradle-plugins:webpack")
-project(":gradle-plugins:webpack").projectDir = File(rootDir, "gradle-plugins/webpack")
+include(":gradle-plugins:otnip-kotlin");project(":gradle-plugins:otnip-kotlin").projectDir = File(rootDir, "gradle-plugins/kotlin")
+include(":gradle-plugins:otnip-logging");project(":gradle-plugins:otnip-logging").projectDir = File(rootDir, "gradle-plugins/logging")
+include(":gradle-plugins:otnip-ratpack");project(":gradle-plugins:otnip-ratpack").projectDir = File(rootDir, "gradle-plugins/ratpack")
+include(":gradle-plugins:otnip-webpack");project(":gradle-plugins:otnip-webpack").projectDir = File(rootDir, "gradle-plugins/webpack")
 
 /**
  * hbase tools
