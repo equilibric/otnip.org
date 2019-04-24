@@ -7,8 +7,9 @@ import kotlin.reflect.KClass
 
 class ReflectWriter<T>(clazz: KClass<*>, connection: Connection) : AutoCloseable {
 
+    val table: Table
     private val encoder = ReflectEncoder<T>(clazz)
-    private val table: Table
+
 
     init {
         table = connection.getTable(encoder.tableName)
