@@ -11,8 +11,8 @@ import kotlin.reflect.full.findAnnotation
 class ReflectEncoder<T>(clazz: kotlin.reflect.KClass<*>) {
 
     val tableName: TableName
+    val family: ByteArray
 
-    private val family: ByteArray
     private val fields = mutableMapOf<String, KProperty1<*, *>>()
     private val rowField: KProperty1<*, *>
 
