@@ -25,6 +25,7 @@ object Utils {
             type.isSupertypeOf(String::class.createType()) -> Bytes.toString(input)
             type.isSupertypeOf(Int::class.createType()) -> Bytes.toInt(input)
             type.isSupertypeOf(Long::class.createType()) -> Bytes.toLong(input)
+            type.isSupertypeOf(ByteArray::class.createType()) -> input
             else -> throw UnsupportedOperationException("type : " + input::class.java)
         }
     }
