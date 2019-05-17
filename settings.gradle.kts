@@ -15,6 +15,5 @@ include(":org.otnip:moy-core");project(":org.otnip:moy-core").projectDir = File(
 include(":org.otnip:moy-registry-core");project(":org.otnip:moy-registry-core").projectDir = File(rootDir, "moy/registry/core")
 include(":org.otnip:moy-registry-zookeeper");project(":org.otnip:moy-registry-zookeeper").projectDir = File(rootDir, "moy/registry/zookeeper")
 
-// dev - development & testing
-include(":test")
-project(":test").projectDir = File(rootDir, "test")
+// gender
+include(":org.otnip:gender-estimation-ssa");project(":org.otnip:gender-estimation-ssa").projectDir = File(rootDir, "gender/estimation/ssa")
