@@ -3,5 +3,5 @@ plugins {
 }
 
 dependencies {
-    compile(project(":moy:moy-core"))
+    compile(project(":org.otnip:moy-core"))
 }

@@ -12,7 +12,7 @@ buildscript {
         classpath("io.ratpack:ratpack-gradle:${properties["otnip_version_ratpack"]}")
         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:${properties["otnip_version_kotlin"]}")
         // plugins ( cyclical dependency )
-        classpath("org.otnip:otnip-kotlin:dev")
+        classpath("org.otnip:plugins-kotlin:dev")
     }
 }
 

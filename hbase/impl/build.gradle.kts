@@ -3,7 +3,7 @@ plugins {
 }
 
 dependencies {
-    compile(project(":hbase:hbase-core"))
+    compile(project(":org.otnip:hbase-core"))
 
     compile("org.apache.hbase:hbase-client:${properties["otnip_version_hbase"]}")
     compile("org.apache.hadoop:hadoop-client:${properties["otnip_version_hadoop2"]}")
